@@ -1,0 +1,68 @@
+#pointer {
+      width: 100px;
+      height: 40px;
+      position: relative;
+      background: red;
+      text-align:center;
+      line-height: 40px;
+    }
+    #pointer::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-top: 20px solid red;
+      border-bottom: 20px solid red;
+    }
+    #pointer::after {
+      content: "";
+      position: absolute;
+      right: -20px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-left: 20px solid red;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+    }
+
+    /* .conatiner{
+        display: flex;
+        flex-flow: row;
+        
+    }
+    .pointer1{
+        width: 101px;
+        height: 40px;
+        position: relative;
+        background: blue;
+    }
+    .pointer1::after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 101px;
+        bottom: 0;
+        background: transparent;
+        border-left: 20px solid red;
+        border-top: 20px solid  transparent;
+        border-bottom: 20px solid  transparent;
+        border-right: 20px solid  transparent;
+    }
+    .pointer1::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: transparent;
+        border-left: 20px solid rebeccapurple;
+        border-top: 20px solid  blue;
+        border-bottom: 20px solid  blue;
+        border-right: 20px solid  blue;
+    } */
