@@ -1,0 +1,67 @@
+
+.app-rootLayOut{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    -ms-grid-rows: 2.25rem calc(100% - 2.25rem);
+    grid-template-rows: 2.25rem calc(100% - 2.25rem);
+    grid-template-areas: "nameplate nameplate"
+    "contacts details";
+}
+
+/**
+* Name Plate zone in application layout.
+*/
+.im-app-nameplate{
+    grid-area: nameplate;
+    height:2.25rem;
+    background: blue;
+}
+
+/**
+* Contacts zone in application layout.
+*/
+.im-app-contacts{
+    grid-area: contacts;
+    height: 100%;
+    min-height: 16rem;
+    min-width: 3.4375rem;
+    max-width: 16.0625rem;
+    position: relative;
+    background: yellow;
+}
+
+/**
+* RightSide details zone in application layout.
+*/
+.im-app-details{
+    grid-area: details;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 2.625rem calc(100% - 2.625rem);
+    grid-template-areas: 
+    "tabs" 
+    "tabContent";
+}
+
+.im-app-tabs{
+    grid-area: tabs;
+    height: 42px;
+    background: rgb(70, 66, 60)
+}
+
+/**
+* tab content area in details layout.
+*/
+.im-app-tabContent{
+    grid-area: tabContent;
+    padding: 89px;
+    margin:auto;
+    /* margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "icon text" ;
+    background: red;
+}
