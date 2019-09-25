@@ -1,0 +1,87 @@
+:host {
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.root{
+    opacity: .5;
+    width: 95%;
+    height: 100%;
+    display:grid;
+    grid-template-areas: "a b c"
+    "d d d"
+    "e e e";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:20px 1fr 20px;
+    max-height: 800px;
+}
+
+.a {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+    background: chocolate;
+    width: 100%;
+}
+.b {
+    grid-area: b;
+    align-self: center;
+    justify-self: center;
+    background: chocolate;
+    width: 100%;
+
+}
+.c {
+    grid-area: c;
+    align-self: center;
+    justify-self: center;
+    background: chocolate;
+    width: 100%;
+}
+.d {
+    grid-area: d;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.dChild{
+    height: 40px;
+    text-align: center;
+    border: 1px solid gray;
+    line-height: 40px;
+}
+
+@for $i from 0 through 1000{
+    @if ($i % 2 == 0) {
+        // Do something
+    
+        .d :nth-child(#{$i}){
+            background-color: aqua;
+            width: random(200) + 400 +px;
+        }
+    }
+
+    @if ($i % 2 == 1) {
+        // Do something
+    
+        .d :nth-child(#{$i}){
+            background-color: red;
+            flex: 1;
+            min-width: 726px;
+        }
+    }
+
+}
+.e {
+    grid-area: e;
+    align-self: center;
+    justify-self: center;
+    background: mediumspringgreen;
+    width: 100%;
+}
