@@ -1,0 +1,10 @@
+<div class="listContainer">
+    <div class="header">Samples</div>
+    <div class="sampleList">
+        <div *ngFor="let item of oSamplesMap | keyvalue" class="box" (click)="onSamlpeClick(item.value)">
+            {{item.key}}
+        </div>
+    </div>
+    <app-dynamic-component [selector]="selector" class="sampleOutPut"></app-dynamic-component>
+    <!-- <ng-template #DynamicComp></ng-template> -->
+</div>
