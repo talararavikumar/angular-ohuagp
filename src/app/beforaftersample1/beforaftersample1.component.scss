@@ -1,0 +1,47 @@
+
+
+.mainelem{
+    width: 300px;
+    height: 40px;
+    background: red;   
+    white-space: nowrap;
+
+    display: flex;              /* establish flex container */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+}
+
+.mainelem2{
+    width: 300px;
+    height: 40px;
+    background: purple;   
+    white-space: nowrap;
+    position: relative;
+
+    display: flex;              /* establish flex container */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+}
+
+.mainelem::before{
+   content: "ravikumar";
+   background: pink;        
+}
+.mainelem2::before{
+    content: "name1";
+    background: pink;
+    position: absolute;
+    left: 0;
+    top:0;        
+ }
+.mainelem::after{
+    content: "pranay";
+    background: blue;        
+ }
+ .mainelem2::after{
+    content: "name2";
+    background: blue; 
+    position: absolute;
+    bottom: 0;
+    right:0;           
+ }
