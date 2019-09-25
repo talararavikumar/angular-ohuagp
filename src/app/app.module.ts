@@ -13,6 +13,6 @@ import {Beforaftersample1Component} from './beforaftersample1/beforaftersample1.
   declarations: [ AppComponent, HelloComponent, AngularSampleListComponent ,DynamicComponentComponent,
   Beforaftersample1Component],
   bootstrap:    [ AppComponent ],
-  entryComponents:[]
+  entryComponents:[Beforaftersample1Component]
 })
 export class AppModule { }
