@@ -17,12 +17,9 @@ export class AngularSampleListComponent implements OnInit {
     this.oSamplesMap.set("min-content sample","app-min-content-sample");
     this.oSamplesMap.set("Center Align Flex Component","app-center-align-flex");
     this.oSamplesMap.set("clariti LayOut","app-clariti-layout");
-    this.oSamplesMap.set("thread item","app-im-da-ta-threaditem");
-    this.oSamplesMap.set("thread item list","app-im-da-ta-threaditemlist");
     this.oSamplesMap.set("sample arrow","app-flatarrow");
     this.oSamplesMap.set("absolute sample","app-absolutesample");
     this.oSamplesMap.set("before after sample","app-beforaftersample1");
-    this.oSamplesMap.set("matmenusample","app-matmenusample");
     this.oSamplesMap.set("widthmarginsample","app-widthmarginsample");
     this.oSamplesMap.set("flexsample", "app-flexsample");
     this.oSamplesMap.set("materror", "app-mat-error");
@@ -32,7 +29,7 @@ export class AngularSampleListComponent implements OnInit {
     this.oSamplesMap.set("grid autoflow sample", "app-gridautoflow");
     this.oSamplesMap.set("flex autoflow sample", "app-flexautoflow");
     this.oSamplesMap.set("flex minmax sample", "app-minmaxsample");
-    this.oSamplesMap.set("grid minmax sample", "app-grid-min-max-sample");
+    this.oSamplesMap.set("grid minmax sample","app-grid-min-max-sample");
   }
 
   public onSamlpeClick(selectedComponent:string):void {

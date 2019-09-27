@@ -1,14 +1,6 @@
 
-
-/* :host {
-    display: flex;
-    min-height: 2.5 * 16px;
-    justify-content: start;
-    align-items: center;
-} */
-.delete{
+%ellipsis{
     text-overflow: ellipsis; /* to add ellipsis if the text exceeds the lenght of the container */
     white-space: nowrap; /* Text will never wrap to the next line */
     overflow: hidden; /* when content overflows an element's box, the overflow is clipped, and the rest of the content will be invisible */
-    min-width: 20px;
 }

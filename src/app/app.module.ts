@@ -15,18 +15,27 @@ import {FlatarrowComponent} from
 './flatarrow/flatarrow.component'
 import {FlexautoflowComponent} from
 './flexautoflow/flexautoflow.component'
+import {SvgsampleComponent} from 
+'./svgsample/Svgsample.component'
+import {ScSvgspriteComponent} from
+'./sc-svgsprite/sc-svgsprite.component'
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, AngularSampleListComponent ,DynamicComponentComponent,
-  Beforaftersample1Component,
-  BorderBoxSampleComponent,
-  CenterAlignFlexComponent,
-  FlatarrowComponent,
-  FlexautoflowComponent],
-  bootstrap:    [ AppComponent ],
-  entryComponents:[Beforaftersample1Component,BorderBoxSampleComponent,
-  CenterAlignFlexComponent,
-  FlatarrowComponent,
-  FlexautoflowComponent]
+  imports:
+  [ BrowserModule, FormsModule ],
+
+  declarations: 
+  [ AppComponent, HelloComponent, AngularSampleListComponent ,DynamicComponentComponent, Beforaftersample1Component,
+  BorderBoxSampleComponent, CenterAlignFlexComponent,
+  FlatarrowComponent, FlexautoflowComponent,
+  SvgsampleComponent, ScSvgspriteComponent],
+
+  bootstrap: 
+  [ AppComponent ],
+
+  entryComponents:
+  [Beforaftersample1Component, BorderBoxSampleComponent,
+  CenterAlignFlexComponent, FlatarrowComponent,
+  FlexautoflowComponent,
+  SvgsampleComponent]
 })
 export class AppModule { }
