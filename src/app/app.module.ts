@@ -25,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {DemoMaterialModule} from './materail-module'
 import {LayoutComponent} from './layout/layout.component'
+import {GridautoflowComponent} from './gridautoflow/gridautoflow.component'
 @NgModule({
   imports:
   [ BrowserModule, FormsModule,ReactiveFormsModule ,MatFormFieldModule,DemoMaterialModule],
@@ -34,7 +35,8 @@ import {LayoutComponent} from './layout/layout.component'
   BorderBoxSampleComponent, CenterAlignFlexComponent,
   FlatarrowComponent, FlexautoflowComponent,
   SvgsampleComponent, ScSvgspriteComponent,
-  NewUserFormComponent,LayoutComponent],
+  NewUserFormComponent,LayoutComponent,
+  GridautoflowComponent],
 
   bootstrap: 
   [ AppComponent ],
@@ -44,6 +46,7 @@ import {LayoutComponent} from './layout/layout.component'
   CenterAlignFlexComponent, FlatarrowComponent,
   FlexautoflowComponent,
   SvgsampleComponent,ScSvgspriteComponent,
-  NewUserFormComponent,LayoutComponent]
+  NewUserFormComponent,LayoutComponent,
+  GridautoflowComponent]
 })
 export class AppModule { }

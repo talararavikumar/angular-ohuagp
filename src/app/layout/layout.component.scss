@@ -1,5 +1,8 @@
-
-.app-rootLayOut{
+*{
+  text-align: center;
+}
+.rootLayOut{
+   min-width:400px;
     display: grid;
     grid-template-columns: min-content 1fr;
     -ms-grid-rows: 2.25rem calc(100% - 2.25rem);
@@ -11,7 +14,7 @@
 /**
 * Name Plate zone in application layout.
 */
-.im-app-nameplate{
+.header{
     grid-area: nameplate;
     height:2.25rem;
     background: blue;
@@ -20,7 +23,7 @@
 /**
 * Contacts zone in application layout.
 */
-.im-app-contacts{
+.leftside{
     grid-area: contacts;
     height: 100%;
     min-height: 16rem;
@@ -33,7 +36,7 @@
 /**
 * RightSide details zone in application layout.
 */
-.im-app-details{
+.details{
     width: 100%;
     height: 100%;
     grid-area: details;
@@ -45,7 +48,7 @@
     "tabContent";
 }
 
-.im-app-tabs{
+.tabs{
     grid-area: tabs;
     height: 42px;
     background: rgb(70, 66, 60)
@@ -54,29 +57,30 @@
 /**
 * tab content area in details layout.
 */
-.im-app-tabContent{
+.tabContent{
     grid-area: tabContent;
-    margin:auto;
-    /* margin-top: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-left: auto; */
     display: grid;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 50% 50%;
-    grid-template-areas: "icon1" "text1" ;
+    grid-template-areas: "item1 details" "item2 details" ;
 }
 
 .div1{
 
   min-width: 100%;
   min-height: 100%;
-  grid-area:icon1;
+  grid-area:item1;
   background: red;
 }
 .div2{
   min-width: 100%;
-    min-height: 100%;
-    grid-area:text1;
- 
-    background: pink;
+  min-height: 100%;
+  grid-area:item2;
+  background: pink;
+}
+.div3{
+  min-width: 100%;
+  min-height: 100%;
+  grid-area:details;
+  background: purple;
 }

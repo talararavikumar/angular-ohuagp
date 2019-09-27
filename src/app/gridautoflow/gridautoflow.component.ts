@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-gridautoflow',
   templateUrl: './gridautoflow.component.html',
-  styleUrls: ['./gridautoflow.component.css']
+  styleUrls: ['./gridautoflow.component.scss']
 })
 export class GridautoflowComponent implements OnInit {
 
