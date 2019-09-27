@@ -16,7 +16,7 @@ export class AngularSampleListComponent implements OnInit {
   ngOnInit() {
     this.oSamplesMap.set("min-content sample","app-min-content-sample");
     this.oSamplesMap.set("Center Align Flex Component","app-center-align-flex");
-    this.oSamplesMap.set("clariti LayOut","app-clariti-layout");
+    this.oSamplesMap.set("LayOut","layout");
     this.oSamplesMap.set("sample arrow","app-flatarrow");
     this.oSamplesMap.set("absolute sample","app-absolutesample");
     this.oSamplesMap.set("before after sample","app-beforaftersample1");

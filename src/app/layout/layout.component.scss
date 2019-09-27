@@ -34,6 +34,8 @@
 * RightSide details zone in application layout.
 */
 .im-app-details{
+    width: 100%;
+    height: 100%;
     grid-area: details;
     display: grid;
     grid-template-columns:100%;
@@ -54,14 +56,27 @@
 */
 .im-app-tabContent{
     grid-area: tabContent;
-    padding: 89px;
     margin:auto;
     /* margin-top: auto;
     margin-right: auto;
     margin-bottom: auto;
     margin-left: auto; */
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "icon text" ;
-    background: red;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "icon1" "text1" ;
+}
+
+.div1{
+
+  min-width: 100%;
+  min-height: 100%;
+  grid-area:icon1;
+  background: red;
+}
+.div2{
+  min-width: 100%;
+    min-height: 100%;
+    grid-area:text1;
+ 
+    background: pink;
 }
