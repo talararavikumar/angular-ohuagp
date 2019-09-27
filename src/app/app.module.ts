@@ -7,12 +7,21 @@ import { HelloComponent } from './hello.component';
 import { AngularSampleListComponent } from './angular-sample-list/angular-sample-list.component'
 import {DynamicComponentComponent} from './dynamic-component/dynamic-component.component'
 import {Beforaftersample1Component} from './beforaftersample1/beforaftersample1.component'
-
+import {BorderBoxSampleComponent} from 
+'./border-box-sample/border-box-sample.component'
+import {CenterAlignFlexComponent} from
+'./center-align-flex/center-align-flex.component'
+import {LayoutComponent} from 
+'./layout/layout.component'
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, AngularSampleListComponent ,DynamicComponentComponent,
-  Beforaftersample1Component],
+  Beforaftersample1Component,
+  BorderBoxSampleComponent,
+  CenterAlignFlexComponent,
+  LayoutComponent],
   bootstrap:    [ AppComponent ],
-  entryComponents:[Beforaftersample1Component]
+  entryComponents:[Beforaftersample1Component,BorderBoxSampleComponent,
+  CenterAlignFlexComponent,LayoutComponent]
 })
 export class AppModule { }
