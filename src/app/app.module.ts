@@ -16,18 +16,24 @@ import {FlatarrowComponent} from
 import {FlexautoflowComponent} from
 './flexautoflow/flexautoflow.component'
 import {SvgsampleComponent} from 
-'./svgsample/Svgsample.component'
+'./svgsample/svgsample.component'
 import {ScSvgspriteComponent} from
 './sc-svgsprite/sc-svgsprite.component'
+import {NewUserFormComponent} from
+'./new-user-form/new-user-form.component'
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {DemoMaterialModule} from './materail-module'
 @NgModule({
   imports:
-  [ BrowserModule, FormsModule ],
+  [ BrowserModule, FormsModule,ReactiveFormsModule ,MatFormFieldModule,DemoMaterialModule],
 
   declarations: 
   [ AppComponent, HelloComponent, AngularSampleListComponent ,DynamicComponentComponent, Beforaftersample1Component,
   BorderBoxSampleComponent, CenterAlignFlexComponent,
   FlatarrowComponent, FlexautoflowComponent,
-  SvgsampleComponent, ScSvgspriteComponent],
+  SvgsampleComponent, ScSvgspriteComponent,
+  NewUserFormComponent],
 
   bootstrap: 
   [ AppComponent ],
@@ -36,6 +42,7 @@ import {ScSvgspriteComponent} from
   [Beforaftersample1Component, BorderBoxSampleComponent,
   CenterAlignFlexComponent, FlatarrowComponent,
   FlexautoflowComponent,
-  SvgsampleComponent]
+  SvgsampleComponent,ScSvgspriteComponent,
+  NewUserFormComponent]
 })
 export class AppModule { }

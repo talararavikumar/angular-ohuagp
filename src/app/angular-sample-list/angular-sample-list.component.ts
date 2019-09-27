@@ -21,7 +21,8 @@ export class AngularSampleListComponent implements OnInit {
     this.oSamplesMap.set("absolute sample","app-absolutesample");
     this.oSamplesMap.set("before after sample","app-beforaftersample1");
     this.oSamplesMap.set("widthmarginsample","app-widthmarginsample");
-    this.oSamplesMap.set("flexsample", "app-flexsample");
+    this.oSamplesMap.set("svgsample",
+     "app-svgsample");
     this.oSamplesMap.set("materror", "app-mat-error");
     this.oSamplesMap.set("form sample", "app-new-user-form");
     this.oSamplesMap.set("view child exapmle", "app-view-child-base");
