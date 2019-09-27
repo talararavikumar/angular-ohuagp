@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-flexautoflow',
   templateUrl: './flexautoflow.component.html',
-  styleUrls: ['./flexautoflow.component.css']
+  styleUrls: ['./flexautoflow.component.scss']
 })
 export class FlexautoflowComponent implements OnInit {
 

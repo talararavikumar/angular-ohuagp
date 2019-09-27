@@ -11,14 +11,22 @@ import {BorderBoxSampleComponent} from
 './border-box-sample/border-box-sample.component'
 import {CenterAlignFlexComponent} from
 './center-align-flex/center-align-flex.component'
+import {FlatarrowComponent} from
+'./flatarrow/flatarrow.component'
+import {FlexautoflowComponent} from
+'./flexautoflow/flexautoflow.component'
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, AngularSampleListComponent ,DynamicComponentComponent,
   Beforaftersample1Component,
   BorderBoxSampleComponent,
-  CenterAlignFlexComponent],
+  CenterAlignFlexComponent,
+  FlatarrowComponent,
+  FlexautoflowComponent],
   bootstrap:    [ AppComponent ],
   entryComponents:[Beforaftersample1Component,BorderBoxSampleComponent,
-  CenterAlignFlexComponent]
+  CenterAlignFlexComponent,
+  FlatarrowComponent,
+  FlexautoflowComponent]
 })
 export class AppModule { }
