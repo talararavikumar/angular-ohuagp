@@ -9,7 +9,7 @@ export class DynamicComponentComponent implements OnInit, OnChanges, AfterViewIn
 
   @Input() public selector:string;
 
-  @ViewChild('DynamicComp', {read:ViewContainerRef}) DynamicCompRef:ViewContainerRef;
+  @ViewChild('DynamicComp', {static:false,read:ViewContainerRef}) DynamicCompRef:ViewContainerRef;
 
   private oComponentRef: ComponentRef<any>;
 
