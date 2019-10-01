@@ -26,7 +26,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {DemoMaterialModule} from './materail-module'
 import {LayoutComponent} from './layout/layout.component'
 import {GridautoflowComponent} from './gridautoflow/gridautoflow.component'
-import {MinmaxsampleComponent} from './minmaxsample/minmaxsample.component'
+import {MinmaxsampleComponent} from './minmaxsample/minmaxsample.component';
+import { ScssSampleComponent } from './scss-sample/scss-sample.component'
 @NgModule({
   imports:
   [ BrowserModule, FormsModule,ReactiveFormsModule ,MatFormFieldModule,DemoMaterialModule],
@@ -37,7 +38,7 @@ import {MinmaxsampleComponent} from './minmaxsample/minmaxsample.component'
   FlatarrowComponent, FlexautoflowComponent,
   SvgsampleComponent, ScSvgspriteComponent,
   NewUserFormComponent,LayoutComponent,
-  GridautoflowComponent,MinmaxsampleComponent],
+  GridautoflowComponent,MinmaxsampleComponent, ScssSampleComponent],
 
   bootstrap: 
   [ AppComponent ],
@@ -48,6 +49,6 @@ import {MinmaxsampleComponent} from './minmaxsample/minmaxsample.component'
   FlexautoflowComponent,
   SvgsampleComponent,ScSvgspriteComponent,
   NewUserFormComponent,LayoutComponent,
-  GridautoflowComponent,MinmaxsampleComponent]
+  GridautoflowComponent,MinmaxsampleComponent,ScssSampleComponent]
 })
 export class AppModule { }
