@@ -29,6 +29,7 @@ export class AngularSampleListComponent implements OnInit {
     this.oSamplesMap.set("flex minmax", "app-minmaxsample");
     this.oSamplesMap.set("grid minmax","app-grid-min-max-sample");
     this.oSamplesMap.set("scss sample","app-scss-sample");
+    this.oSamplesMap.set("call apply bind", "app-callapplybind")
   }
 
   public onSamlpeClick(selectedComponent:string):void {
