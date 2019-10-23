@@ -1,0 +1,4 @@
+<ng-container [ngSwitch]="eImItemType">
+    <app-flatarrow *ngSwitchCase="ImItemTypeEnum.COMMITEM"></app-flatarrow>
+    <app-center-align-flex *ngSwitchCase="ImItemTypeEnum.THREAD" ></app-center-align-flex>
+</ng-container>

@@ -29,7 +29,8 @@ import {GridautoflowComponent} from './gridautoflow/gridautoflow.component'
 import {MinmaxsampleComponent} from './minmaxsample/minmaxsample.component';
 import { ScssSampleComponent } from './scss-sample/scss-sample.component';
 import { CallapplybindComponent } from './callapplybind/callapplybind.component';
-import { DisplayblocksampleComponent } from './displayblocksample/displayblocksample.component'
+import { DisplayblocksampleComponent } from './displayblocksample/displayblocksample.component';
+import { SwitchSampleComponent } from './switch-sample/switch-sample.component'
 @NgModule({
   imports:
   [ BrowserModule, FormsModule,ReactiveFormsModule ,MatFormFieldModule,DemoMaterialModule],
@@ -40,7 +41,8 @@ import { DisplayblocksampleComponent } from './displayblocksample/displayblocksa
   FlatarrowComponent, FlexautoflowComponent,
   SvgsampleComponent, ScSvgspriteComponent,
   NewUserFormComponent,LayoutComponent,
-  GridautoflowComponent,MinmaxsampleComponent, ScssSampleComponent, CallapplybindComponent, DisplayblocksampleComponent],
+  GridautoflowComponent,MinmaxsampleComponent, ScssSampleComponent, CallapplybindComponent,
+  DisplayblocksampleComponent, SwitchSampleComponent],
 
   bootstrap: 
   [ AppComponent ],
@@ -51,6 +53,7 @@ import { DisplayblocksampleComponent } from './displayblocksample/displayblocksa
   FlexautoflowComponent,
   SvgsampleComponent,ScSvgspriteComponent,
   NewUserFormComponent,LayoutComponent,
-  GridautoflowComponent,MinmaxsampleComponent,ScssSampleComponent,CallapplybindComponent,DisplayblocksampleComponent]
+  GridautoflowComponent,MinmaxsampleComponent,ScssSampleComponent,CallapplybindComponent,
+  DisplayblocksampleComponent,SwitchSampleComponent]
 })
 export class AppModule { }
