@@ -32,6 +32,7 @@ export class AngularSampleListComponent implements OnInit {
     this.oSamplesMap.set("call apply bind", "app-callapplybind");
     this.oSamplesMap.set("display block","app-displayblocksample");
     this.oSamplesMap.set("switch sample","app-switch-sample");
+    this.oSamplesMap.set("twitter time line", "app-twittertimeline")
   }
 
   public onSamlpeClick(selectedComponent:string):void {

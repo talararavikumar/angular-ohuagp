@@ -31,6 +31,7 @@ import { ScssSampleComponent } from './scss-sample/scss-sample.component';
 import { CallapplybindComponent } from './callapplybind/callapplybind.component';
 import { DisplayblocksampleComponent } from './displayblocksample/displayblocksample.component';
 import { SwitchSampleComponent } from './switch-sample/switch-sample.component'
+import {TwittertimelineComponent} from './twittertimeline/twittertimeline.component'
 @NgModule({
   imports:
   [ BrowserModule, FormsModule,ReactiveFormsModule ,MatFormFieldModule,DemoMaterialModule],
@@ -42,7 +43,7 @@ import { SwitchSampleComponent } from './switch-sample/switch-sample.component'
   SvgsampleComponent, ScSvgspriteComponent,
   NewUserFormComponent,LayoutComponent,
   GridautoflowComponent,MinmaxsampleComponent, ScssSampleComponent, CallapplybindComponent,
-  DisplayblocksampleComponent, SwitchSampleComponent],
+  DisplayblocksampleComponent, SwitchSampleComponent, TwittertimelineComponent],
 
   bootstrap: 
   [ AppComponent ],
@@ -54,6 +55,6 @@ import { SwitchSampleComponent } from './switch-sample/switch-sample.component'
   SvgsampleComponent,ScSvgspriteComponent,
   NewUserFormComponent,LayoutComponent,
   GridautoflowComponent,MinmaxsampleComponent,ScssSampleComponent,CallapplybindComponent,
-  DisplayblocksampleComponent,SwitchSampleComponent]
+  DisplayblocksampleComponent,SwitchSampleComponent, TwittertimelineComponent]
 })
 export class AppModule { }
