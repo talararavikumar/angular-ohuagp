@@ -1,0 +1,25 @@
+.rootLayout{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .img{
+    flex: auto;
+    height:25rem;
+    background: burlywood;
+    min-height: 200px;
+    resize: vertical;
+  }
+  .list{
+    flex:1 1 200px;
+    background: powderblue;
+    overflow-y: auto;
+  }
+}
+:host{
+  display: block;
+  height: 100%;
+  width:100%;
+}
+
